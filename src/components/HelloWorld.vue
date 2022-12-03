@@ -15,7 +15,7 @@ import Timer from './Timer/index.vue'
 
 defineProps<{ msg: string }>()
 
-const timerRef = ref<InstanceType<typeof Timer> | null>(null)
+const timerRef = ref<any>(null)
 
 const handleStart = () => {
   timerRef.value?.start?.()
