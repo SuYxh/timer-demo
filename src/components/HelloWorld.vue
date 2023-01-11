@@ -1,6 +1,8 @@
 <template>
   <h1>{{ msg }}</h1>
 
+  <p>计时开始后，若要重新开始计时，需要点击 reset</p>
+
   <Timer ref="timerRef" />
 
   <button class="margin" @click="handleStart">start</button>
